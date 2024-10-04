@@ -7,7 +7,6 @@ h1, h2 {
 
 /* Layout */
 .wrapper {
-  box-shadow: inset 0 0 10px red;
   margin: 0 100px;
 }
 
@@ -37,4 +36,24 @@ h1, h2 {
   width: 20px;
   height: 1px;
   background-color: gray;
+}
+
+.news_search {
+  margin-top: 20px;
+  display: flex;
+}
+
+.news_search input {
+  flex-grow: 1;
+  border: 1px solid lightgray;
+  border-radius: 10px 0 0 10px;
+}
+
+.news_search button {
+  flex-shrink: 0;
+  padding: 0 10px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #C9C9C9;
+  border-radius: 0 10px 10px 0;
 }
