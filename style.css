@@ -1,0 +1,40 @@
+/* Reset */
+h1, h2 {
+  font-size: unset;
+  font-weight: unset;
+  margin: unset;
+}
+
+/* Layout */
+.wrapper {
+  box-shadow: inset 0 0 10px red;
+  margin: 0 100px;
+}
+
+/* Design */
+.news_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news_header h1 {
+  font-size: 1.5em;
+}
+
+.news_header h2 {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.news_header h2::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: gray;
+}
