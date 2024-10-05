@@ -33,7 +33,7 @@ search.addEventListener('click', function () {
         <a href="#" onclick="window.open('${url}', '_blank', 'left=1000, top=500, width=1000, height=600')">more</a>
         <p>${description}</p>
       </div>
-        <img src='${urlToImage}'>
+        <img src='${urlToImage}' onerror="this.style.display='none'">
       </div>
       `;
     }
