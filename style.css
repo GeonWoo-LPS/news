@@ -1,8 +1,13 @@
 /* Reset */
-h1, h2 {
+h1, h2, h4 {
   font-size: unset;
   font-weight: unset;
   margin: unset;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
 }
 
 /* Layout */
@@ -47,13 +52,43 @@ h1, h2 {
   flex-grow: 1;
   border: 1px solid lightgray;
   border-radius: 10px 0 0 10px;
+  padding: 10px;
 }
 
 .news_search button {
   flex-shrink: 0;
   padding: 0 10px;
-  height: 30px;
+  height: 40px;
   background-color: white;
   border: 1px solid #C9C9C9;
   border-radius: 0 10px 10px 0;
+}
+
+.contents {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.contents img {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.textWrap {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.textWrap h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.textWrap span, .textWrap a {
+  font-style: italic;
 }
