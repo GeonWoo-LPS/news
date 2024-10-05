@@ -26,11 +26,16 @@ search.addEventListener('click', function () {
       let urlToImage = article[i]['urlToImage'];
 
       resultTxt += `
-      <h4>${title}</h4>
-      <span>${author}-${publishedAt}-</span>
-      <a href='${url}'>more</a>
-      <p>${description}</p>
-      <img src='${urlToImage}'>
+      <div class='contents'>
+        <div class="textWrap">
+        <h4>${title}</h4>
+        <span>${author}-${publishedAt}-</span>
+        <a href='${url}'>more</a>
+        <p>${description}</p>
+      </div>
+        <img src='${urlToImage}'>
+      </div>
+    
       `;
     }
     result.innerHTML = resultTxt;
