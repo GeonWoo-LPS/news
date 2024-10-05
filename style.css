@@ -5,6 +5,10 @@ h1, h2, h4 {
   margin: unset;
 }
 
+p {
+  margin: unset;
+}
+
 img {
   vertical-align: top;
   max-width: 100%;
@@ -68,14 +72,13 @@ img {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 20px;
-  
+  height: 200px;
 }
 
 .contents img {
   width: 200px;
-  height: 200px;
+  height: 100%;
   flex-shrink: 0;
 }
 
@@ -85,10 +88,19 @@ img {
 }
 
 .textWrap h4 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin-bottom: 10px;
 }
 
 .textWrap span, .textWrap a {
   font-style: italic;
+  font-size: 0.9em;
+}
+
+.textWrap a {
+  color: blue;
+}
+
+.textWrap p {
+  margin-top: 10px;
 }
