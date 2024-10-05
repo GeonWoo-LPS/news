@@ -30,12 +30,11 @@ search.addEventListener('click', function () {
         <div class="textWrap">
         <h4>${title}</h4>
         <span>${author}-${publishedAt}-</span>
-        <a href='${url}'>more</a>
+        <a href="#" onclick="window.open('${url}', '_blank', 'left=1000, top=500, width=1000, height=600')">more</a>
         <p>${description}</p>
       </div>
         <img src='${urlToImage}'>
       </div>
-    
       `;
     }
     result.innerHTML = resultTxt;
